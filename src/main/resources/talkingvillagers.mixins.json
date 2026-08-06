@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.talkingvillagers.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"CustomClickActionMixin",
+		"RaidMixin",
+		"VillagerMakeLoveMixin",
+		"VillagerSocialMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
