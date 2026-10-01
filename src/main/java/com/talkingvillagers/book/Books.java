@@ -66,7 +66,7 @@ public final class Books {
 		} else {
 			// placeItemBackInInventory drops the item at the player's feet when there is no room,
 			// so the book is never silently destroyed by a full inventory.
-			player.getInventory().placeItemBackInInventory(written);
+			player.getInventory().placeItemBackInInventory(written, net.minecraft.util.Prediction.SERVER_ONLY);
 		}
 		player.containerMenu.broadcastChanges();
 	}
